@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="یک تجربه تعاملی کوتاه برای دیدن موقعیت‌های اجتماعی از زاویه‌ای تازه.">
+  <title>یک دقیقه جای من باش | تجربه‌ای برای دیدن از زاویه‌ای دیگر</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="صفحه اصلی یک دقیقه جای من باش" id="brandHome">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+        <span class="brand-name">یک دقیقه <b>جای من باش</b></span>
+      </a>
+      <div class="topbar-note"><span class="pulse-dot"></span> یک تجربه کوتاه، یک نگاه تازه</div>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="screen active" id="homeScreen" aria-labelledby="heroTitle">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> تجربه تعاملی همدلی</div>
+            <h1 id="heroTitle">گاهی برای فهمیدنِ آدم‌ها،<br><em>باید جای آن‌ها بایستیم.</em></h1>
+            <p class="hero-lead">چند دقیقه وارد دنیای یک نفر شو. موقعیتش را ببین، تصمیم بگیر و کشف کن پشت بعضی رفتارها چه داستانی ممکن است پنهان باشد.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#stories" id="exploreBtn">شروع تجربه <span aria-hidden="true">←</span></a>
+              <div class="micro-note"><span class="micro-icon">◷</span> هر داستان حدود ۱ تا ۳ دقیقه</div>
+            </div>
+            <div class="hero-trust">
+              <span><i class="check-icon">✓</i> بدون ثبت‌نام</span>
+              <span><i class="check-icon">✓</i> بدون هوش مصنوعی</span>
+              <span><i class="check-icon">✓</i> رایگان</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="تصویرسازی مفهومی دو نفر که از زاویه یکدیگر به دنیا نگاه می‌کنند">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-sun"></div>
+            <div class="art-card art-card-back"><span class="art-mini-label">از نگاه او</span><div class="art-lines"><i></i><i></i><i></i></div></div>
+            <div class="art-person person-left"><span class="person-head"></span><span class="person-body"></span></div>
+            <div class="art-person person-right"><span class="person-head"></span><span class="person-body"></span></div>
+            <div class="art-card art-card-front"><span class="quote-mark">“</span><span>هر آدمی<br>داستانی دارد.</span><small>قبل از قضاوت، بشنو.</small></div>
+            <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✦</span>
+          </div>
+        </div>
+
+        <section class="stories-section" id="stories" aria-labelledby="storiesTitle">
+          <div class="section-heading">
+            <div><div class="eyebrow"><span class="eyebrow-line"></span> انتخاب با توست</div><h2 id="storiesTitle">کدام دنیا را تجربه می‌کنی؟</h2></div>
+            <p>یک موقعیت را انتخاب کن و داستان را با تصمیم‌های خودت جلو ببر.</p>
+          </div>
+          <div class="story-grid" id="storyGrid"></div>
+        </section>
+
+        <section class="how-section" aria-label="روش کار">
+          <div class="how-item"><span class="how-number">۰۱</span><div><b>یک موقعیت انتخاب کن</b><p>با یک داستان کوتاه وارد ماجرا شو.</p></div></div>
+          <div class="how-item"><span class="how-number">۰۲</span><div><b>جای شخصیت تصمیم بگیر</b><p>هر انتخاب، واکنش و ادامه متفاوتی دارد.</p></div></div>
+          <div class="how-item"><span class="how-number">۰۳</span><div><b>از زاویه تازه نگاه کن</b><p>در پایان، برداشت‌ها و نکته‌های داستان را ببین.</p></div></div>
+        </section>
+      </section>
+
+      <section class="screen story-screen" id="storyScreen" aria-labelledby="storyTitle" hidden>
+        <div class="story-topline">
+          <button class="back-link" id="backHome" type="button"><span aria-hidden="true">→</span> بازگشت به داستان‌ها</button>
+          <span class="story-counter" id="storyCounter">داستان ۱ از ۵</span>
+        </div>
+        <div class="story-layout">
+          <aside class="story-aside">
+            <div class="story-illustration" id="storyIllustration"><span class="illustration-symbol">◎</span></div>
+            <div class="aside-label">داستان انتخاب‌شده</div>
+            <h2 id="storyTitle">عنوان داستان</h2>
+            <p id="storyIntro">توضیح داستان</p>
+            <div class="time-chip"><span>◷</span> حدود ۲ دقیقه</div>
+            <div class="aside-reminder"><span>✳</span><p>اینجا جواب درست و غلط نداریم؛ فقط فرصت داریم یک موقعیت را از چند زاویه ببینیم.</p></div>
+          </aside>
+          <div class="story-main">
+            <div class="progress-head"><span id="stepLabel">موقعیت اول</span><span id="progressText">۱ از ۳</span></div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+            <article class="scene-card" aria-live="polite">
+              <div class="scene-kicker"><span class="scene-dot"></span> موقعیت پیش رو</div>
+              <h3 id="sceneTitle">عنوان موقعیت</h3>
+              <p class="scene-description" id="sceneDescription"></p>
+              <div class="decision-question" id="decisionQuestion"></div>
+              <div class="choice-list" id="choiceList"></div>
+              <div class="feedback-panel" id="feedbackPanel" hidden aria-live="polite">
+                <div class="feedback-heading"><span class="feedback-check">✓</span><b>این انتخاب چه تغییری ایجاد کرد؟</b></div>
+                <p id="feedbackText"></p>
+                <button class="btn btn-primary btn-continue" id="continueBtn" type="button">ادامه داستان <span aria-hidden="true">←</span></button>
+              </div>
+            </article>
+            <div class="story-footnote"><span>♡</span> گاهی یک سؤال خوب، از یک قضاوت سریع مفیدتر است.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen result-screen" id="resultScreen" aria-labelledby="resultTitle" hidden>
+        <div class="result-decoration decoration-one"></div><div class="result-decoration decoration-two"></div>
+        <div class="result-content">
+          <div class="result-icon">✳</div>
+          <div class="eyebrow centered"><span class="eyebrow-line"></span> پایان این تجربه <span class="eyebrow-line"></span></div>
+          <h2 id="resultTitle">یک قدم به دنیای او نزدیک‌تر شدی.</h2>
+          <p class="result-intro" id="resultIntro"></p>
+          <div class="result-insight">
+            <span class="insight-label">نکته‌ای برای فکر کردن</span>
+            <p id="resultInsight"></p>
+          </div>
+          <div class="choice-recap" id="choiceRecap"></div>
+          <p class="gentle-note">این تجربه یک داستان تعاملی است، نه آزمون شخصیت یا ارزیابی روان‌شناختی. انتخاب‌های تو به‌تنهایی چیزی را درباره شخصیتت ثابت نمی‌کنند.</p>
+          <div class="result-actions">
+            <button class="btn btn-primary" id="replayBtn" type="button">تجربه دوباره <span aria-hidden="true">↻</span></button>
+            <button class="btn btn-secondary" id="allStoriesBtn" type="button">انتخاب داستان دیگر</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-brand" href="#home" id="footerHome">یک دقیقه جای من باش</a>
+      <span>برای دیدن آدم‌ها، کمی مکث کنیم.</span>
+      <span class="footer-tech">یک تجربه مستقل و رایگان</span>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
